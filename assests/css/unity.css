@@ -27,28 +27,21 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Cards */
-    .card {
-      border-radius: 20px;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-    .card:hover {
-      transform: translateY(-12px) scale(1.02);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-    }
+   .card {
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 2px solid #2ecc71; /* Green border on hover */
+}
 
     .unity-footer{
       background: linear-gradient(90deg, #004d00, #027a3f, #2e8b57);
     }
-    .card {
-  border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-}
-
 
     /* Animation Fade-in */
     .fade-in {
