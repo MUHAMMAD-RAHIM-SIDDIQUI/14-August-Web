@@ -1,0 +1,83 @@
+/* Navbar */
+@import url(
+  style.css
+);
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #2ecc71, #27ae60, #006400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: gradientMove 4s infinite alternate;
+  background-size: 200% auto;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 400% 400%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBG 10s ease infinite;
+}
+.hero .container {
+  z-index: 1;
+}
+
+/* Stylish heading font */
+.stylish-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Cards */
+.symbol-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+}
+.symbol-card img {
+  height: 230px;
+  object-fit: cover;
+}
+.symbol-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 128, 0, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #004d00, #027a3f, #2e8b57);
+  font-weight: 500;
+}
+
+/* Animations */
+.animate-fade { animation: fadeIn 2s ease-in-out; }
+.animate-slide { animation: slideUp 2.5s ease-in-out; }
+
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes slideUp { from {transform:translateY(30px);opacity:0;} to {transform:translateY(0);opacity:1;} }
+
+/* Gradient BG Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Gradient Text Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+section {
+  background: linear-gradient(180deg, #f0fff0, #ffffff);
+  padding: 60px 0;
+}

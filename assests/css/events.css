@@ -1,0 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg,#f0fff0,#ffffff);
+  color: #333;
+  margin: 0;
+}
+.custom-navbar{
+    background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+/* Video Card */
+.card video {
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-top: 10px;
+  transition: transform 0.4s;
+}
+.card video:hover {
+  transform: scale(1.02);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #2ecc71;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+}
+.timeline-item.left {
+  left: 0;
+}
+.timeline-item.right {
+  left: 50%;
+}
+.timeline-content {
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.4s;
+}
+.timeline-content:hover {
+  transform: translateY(-10px);
+}
+
+/* Dots on timeline */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2ecc71;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+.timeline-item.left::before {
+  right: -9px;
+}
+.timeline-item.right::before {
+  left: -9px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 30px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 25px;
+  }
+  .timeline-item.right {
+    left: 0%;
+  }
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    left: 15px;
+  }
+}

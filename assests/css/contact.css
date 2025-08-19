@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg,#f0fff0,#ffffff);
+  color: #333;
+  margin: 0;
+}
+.custom-navbar{
+    background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.contact-section {
+    background: #121212; /* same as index dark theme */
+}
+
+/* Form & Map Cards */
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,255,100,0.25);
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+}
+
+/* Inputs */
+.form-control {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 10px;
+}
+.form-control:focus {
+  background: #2a2a2a;
+  border-color: #00c853;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0,200,83,0.6);
+}
+
+/* Gold Button */
+.btn-gold {
+  background: linear-gradient(45deg,#ffd700,#ffb300);
+  border: none;
+  color: #121212;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: transform 0.3s;
+}
+.btn-gold:hover {
+  transform: scale(1.05);
+  color: #000;
+}
+
+/* Map */
+.map-wrap iframe {
+  border-radius: 15px;
+}

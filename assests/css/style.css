@@ -1,0 +1,80 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg,#f0fff0,#ffffff);
+  color: #333;
+  margin: 0;
+}
+.custom-navbar{
+    background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #2ecc71, #27ae60, #006400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: gradientMove 4s infinite alternate;
+  background-size: 200% auto;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 400% 400%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBG 10s ease infinite;
+}
+.stylish-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* About Section Gradient */
+.about-section {
+  background: linear-gradient(180deg, #f0fff0, #ffffff);
+}
+
+/* Cards */
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+}
+.custom-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 128, 0, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #004d00, #027a3f, #2e8b57);
+  font-weight: 500;
+}
+
+/* Animations */
+.animate-slide { animation: slideUp 2.5s ease-in-out; }
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+a { text-decoration: none; }

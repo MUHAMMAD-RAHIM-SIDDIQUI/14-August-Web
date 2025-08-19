@@ -1,0 +1,42 @@
+/* faith.css */
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #004d00, #027a3f, #00a859);
+}
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 600% 600%;
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Cards */
+.card {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+.faith-footer {
+  background: linear-gradient(90deg, #004d00, #027a3f, #2e8b57);
+}

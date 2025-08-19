@@ -1,0 +1,70 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg,#f0fff0,#ffffff);
+  color: #333;
+  margin: 0;
+}
+.custom-navbar{
+    background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}.navbar-brand, .nav-link { font-weight: 600; }
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #2ecc71, #27ae60, #006400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  background-size: 200% auto;
+  animation: gradientMove 4s infinite alternate;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(270deg, #004d00, #027a3f, #2e8b57, #00a859);
+  background-size: 400% 400%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* Cards */
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 128, 0, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #004d00, #027a3f, #2e8b57);
+  font-weight: 500;
+  color: #fff;
+}
+.main-img{
+  height: 260px;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+/* same as pehle ka, extra updates: */
+
+img {
+  transition: transform 0.4s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
